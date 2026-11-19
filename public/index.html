@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.8"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <script type="module" src="./app.js"></script>
+    </head>
+    <body>
+        <main class="container">
+            <header><div><h1>💬 Mensageiro Local</h1><p>Mensagens compartilhadas na rede do laboratório</p></div><span id="conexao">Conectando…</span></header>
+            <section class="painel" aria-label="Mensagens"><ul id="mensagens"></ul></section>
+            <form id="formulario">
+                <label>Seu nome<input id="usuario" type="text" maxlength="40" placeholder="Ex.: Ana" required autocomplete="nickname" /></label>
+                <label>Mensagem<input id="texto" type="text" maxlength="500" placeholder="Escreva aqui..." required /></label>
+                <button type="submit" id="enviar">Enviar ↗</button>
+            </form>
+        <p id="aviso" role="status" aria-live="polite"></p>
+        <footer>Atualização automática a cada 3 segundos • Uso exclusivo da rede local</footer>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #edf2fb;
+    color: #1b2940;
+    font:
+        16px/1.5 system-ui,
+        Arial,
+        sans-serif;
+}
+
+.container {
+    width: min(760px, 96%);
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 14px 40px #1b29401a;
+    padding: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 14px;
+    border-bottom: 1px solid #e1e8f3;
+}
+
+h1 {
+    margin: 0;
+    color: #184a98;
+}
+
+p {
+    margin: 6px 0 16px;
+}
+
+#conexao {
+    font-size: 12px;
+    background: #e6faef;
+    color: #1a7b3a;
+    border-radius: 20px;
+    padding: 6px 10px;
+    white-space: nowrap;
+}
+
+.painel {
+    height: 360px;
+    overflow: auto;
+    background: #f5f8fd;
+    border-radius: 14px;
+    margin: 18px 0;
+}
+
+ul {
+    padding: 16px;
+    list-style: none;
+    margin: 0;
+}
+
+li {
+    background: white;
+    border-left: 4px solid #4779da;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #244f98;
+    font-size: 12px;
+}
+
+.texto {
+    margin-top: 4px;
+    white-space: pre-wrap;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto;
+    align-items: end;
+    gap: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 1px solid #becce1;
+    padding: 11px;
+    border-radius: 9px;
+    font: inherit;
+}
+
+button {
+    padding: 12px 20px;
+    color: white;
+    background: #255cc4;
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#aviso {
+    min-height: 25px;
+    color: #8b3e27;
+}
+
+footer {
+    font-size: 12px;
+    color: #6c788d;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
